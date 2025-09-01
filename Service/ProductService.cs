@@ -10,30 +10,30 @@ namespace ecom.Service
 {
     internal class ProductService
     {
-        List<Product> products;
-        public void addProduct(Product product)
+        List<Product> Products;
+        public void AddProduct(Product product)
         {
-            if (product.quantity == 0)
+            if (product.Quantity == 0)
             {
                 Console.WriteLine("this Product have no quantity");
                 return;
             }
-                product.CreatedDate = DateTime.Now;
-                product.UpdatedDate = DateTime.Now;
+                product.CreatedAt = DateTime.Now;
+                product.UpdatedAt = DateTime.Now;
 
-                products.Add(product);
+            Products.Add(product);
 
             
            
         }
 
-        public void removeProduct(int productId) 
+        public void RemoveProduct(int productId) 
         {
-            products = products.Where(x =>x.Id != productId).ToList();
+            Products = Products.Where(x =>x.Id != productId).ToList();
         }
         
-        public List<Product> getProducts(Func<Product,bool> fillter  ) {
-            return products.Where(fillter).ToList();
+        public List<Product> GetProducts(Func<Product,bool> fillter  ) {
+            return Products.Where(fillter).ToList();
         }
       
 

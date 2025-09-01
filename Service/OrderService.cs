@@ -10,6 +10,7 @@ namespace ecom.Service
     internal class OrderService
     {
         static int IDnow = 1;
+        private readonly Discount _discount = new();
 
         List<Order> orders = new List<Order>();
         public Order PlaceOrder(Customer customer) 
@@ -17,19 +18,18 @@ namespace ecom.Service
             Order o = new Order();
             o.Id = (IDnow*33336)%5553;
             IDnow+=22;
-            o.CreatedDate = DateTime.Now;
-            o.UpdatedDate = DateTime.Now;
-            o.customer = customer;
+            o.CreatedAt = DateTime.Now;
+            o.UpdatedAt = DateTime.Now;
+            o.Customer = customer;
+            o.Products = new();
+            orders.Add(o);
             return o;
 
         }
         // single Responsiblility prnciple !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        public double Discount(CustomerType customerType)
+        public double GetDiscount(CustomerType customerType)
         {
-            if (customerType == CustomerType.Normal)
-                return 0.20;
-            else return 0.50;
-
+            return _discount.GetDiscount(customerType);
         }
     }
 }

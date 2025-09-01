@@ -8,11 +8,11 @@ namespace ecom.models
 {
     internal class Employee : AUser
     {
-        public int salary { get; set; }
+        public decimal Salary { get; set; }
 
-        public override Rule access()
+        public override Role Access()
         {
-            return Rule.customer;
+            return Role.employee;
         }
     }
 }

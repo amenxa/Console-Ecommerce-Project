@@ -9,13 +9,13 @@ namespace ecom.models
     public enum CustomerType { Normal, Premium }
     internal class Customer : AUser
     {
-        public string visainfo {  get; set; }
+        public string VisaInfo {  get; set; }
 
-        CustomerType type { get; set; }
-        List<Order> orders { get; set; }
-        public override Rule access()
+        CustomerType Type { get; set; }
+        List<Order> Orders { get; set; }
+        public override Role Access()
         {
-            return Rule.customer;
+            return Role.customer;
         }
     }
 }

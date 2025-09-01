@@ -8,15 +8,17 @@ using System.Threading.Tasks;
 namespace ecom
 {
     
-    internal class discount
+    internal class Discount
     {
         //Open Closed Principle
-        public double Discount(CustomerType customerType)
+        private static readonly Dictionary<CustomerType, double> _map =
+        new()
         {
-            if (customerType == CustomerType.Normal)
-                return 0.20;
-            else return 0.50;    
-            
-        }
+                { CustomerType.Normal,  0.20 },
+                { CustomerType.Premium, 0.50 },
+        };
+
+        public double GetDiscount(CustomerType customerType) =>
+            _map.TryGetValue(customerType, out var d) ? d : 0;
     }
 }

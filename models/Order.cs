@@ -10,15 +10,15 @@ namespace ecom.models
     {
         public int Id { get; set; }
 
-        public Customer customer { get; set; }
+        public Customer Customer { get; set; }
 
         public string Description { get; set; }
 
-        public DateTime CreatedDate { get; set; }
 
-        public DateTime UpdatedDate { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
-        List<Product> products { get; set; }
+        public List<Product> Products { get; set; } = new();
 
 
 
