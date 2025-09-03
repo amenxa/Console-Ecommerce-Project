@@ -11,7 +11,7 @@ namespace ecom
     internal class discount
     {
         //Open Closed Principle
-        public double Discount(CustomerType customerType)
+        public static double Discount(CustomerType customerType)
         {
             if (customerType == CustomerType.Normal)
                 return 0.20;

@@ -10,9 +10,9 @@ namespace ecom.models
     {
         public int salary { get; set; }
 
-        public override Rule access()
+        public override Role access()
         {
-            return Rule.customer;
+            return Role.employee;
         }
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\2026\source\repos\ecom\ecom\obj\Debug\net8.0\ecom.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2026\source\repos\ecom\ecom\obj\Debug\net8.0\ecom.AssemblyInfoInputs.cache
+C:\Users\2026\source\repos\ecom\ecom\obj\Debug\net8.0\ecom.AssemblyInfo.cs
+C:\Users\2026\source\repos\ecom\ecom\obj\Debug\net8.0\ecom.csproj.CoreCompileInputs.cache
+C:\Users\2026\source\repos\ecom\ecom\obj\Debug\net8.0\ecom.sourcelink.json
+C:\Users\2026\source\repos\ecom\ecom\bin\Debug\net8.0\ecom.exe
+C:\Users\2026\source\repos\ecom\ecom\bin\Debug\net8.0\ecom.deps.json
+C:\Users\2026\source\repos\ecom\ecom\bin\Debug\net8.0\ecom.runtimeconfig.json
+C:\Users\2026\source\repos\ecom\ecom\bin\Debug\net8.0\ecom.dll
+C:\Users\2026\source\repos\ecom\ecom\bin\Debug\net8.0\ecom.pdb
+C:\Users\2026\source\repos\ecom\ecom\obj\Debug\net8.0\ecom.dll
+C:\Users\2026\source\repos\ecom\ecom\obj\Debug\net8.0\refint\ecom.dll
+C:\Users\2026\source\repos\ecom\ecom\obj\Debug\net8.0\ecom.pdb
+C:\Users\2026\source\repos\ecom\ecom\obj\Debug\net8.0\ecom.genruntimeconfig.cache
+C:\Users\2026\source\repos\ecom\ecom\obj\Debug\net8.0\ref\ecom.dll

@@ -7,18 +7,18 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ecom.models
 {
-    public enum Rule { customer ,employee , manegar}
+    public enum Role { customer ,employee , manager}
     internal abstract class AUser
     {
-        int Id { set; get; }
-        string name { set; get; }
+        public int Id { set; get; }
+        public string name { set; get; }
 
-        Date DateOfbirth { set; get; }
+        public Date DateOfbirth { set; get; }
 
-        string address { set; get; }
+        public string address { set; get; }
 
         // Liskov Substitution Principle !!!!!!!!!!!!!!!!!!!!!!!! 
         public string Position; 
-        public abstract Rule access();
+        public abstract Role access();
     }
 }

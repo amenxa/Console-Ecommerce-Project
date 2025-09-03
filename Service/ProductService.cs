@@ -11,6 +11,10 @@ namespace ecom.Service
     internal class ProductService
     {
         List<Product> products;
+        public ProductService()
+        {
+            products = new List<Product>();
+        }
         public void addProduct(Product product)
         {
             if (product.quantity == 0)
@@ -22,9 +26,6 @@ namespace ecom.Service
                 product.UpdatedDate = DateTime.Now;
 
                 products.Add(product);
-
-            
-           
         }
 
         public void removeProduct(int productId) 
@@ -35,7 +36,13 @@ namespace ecom.Service
         public List<Product> getProducts(Func<Product,bool> fillter  ) {
             return products.Where(fillter).ToList();
         }
-      
+
+        public Product getProductsById (int productId)
+        {
+            return products.FirstOrDefault(n => n.Id == productId);
+        }
+
+
 
 
     }
